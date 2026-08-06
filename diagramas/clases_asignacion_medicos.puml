@@ -1,0 +1,45 @@
+@startuml
+title Asignación de médicos por especialidad y disponibilidad (Clases)
+
+class Medico {
+  +id: int
+  +nombre: string
+}
+
+class Especialidad {
+  +id: int
+  +nombre: string
+}
+
+class Disponibilidad {
+  +fecha: date
+  +turno: string
+  +estado: string
+}
+
+class Paciente {
+  +id: int
+  +nombre: string
+}
+
+class SolicitudAtencion {
+  +id: int
+  +fecha: date
+  +estado: string
+}
+
+class Asignacion {
+  +id: int
+  +fecha: date
+  +estado: string
+}
+
+Medico "1" -- "1..*" Especialidad : domina >
+Medico "1" -- "0..*" Disponibilidad : publica >
+Paciente "1" -- "0..*" SolicitudAtencion : genera >
+SolicitudAtencion "1" -- "1" Especialidad : requiere >
+SolicitudAtencion "1" -- "0..1" Asignacion : se resuelve con >
+Asignacion "1" -- "1" Medico : asigna >
+Asignacion "1" -- "1" Disponibilidad : usa >
+
+@enduml
