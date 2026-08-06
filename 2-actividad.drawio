@@ -1,0 +1,133 @@
+<mxfile host="app.diagrams.net" agent="Claude" version="24.0.0" type="device">
+  <diagram id="actDiagram" name="Actividad">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+<mxCell id="laneAdmin" value="Administrador / Recepcionista" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+  <mxGeometry x="0" y="0" width="300" height="1180" as="geometry" />
+</mxCell>
+<mxCell id="laneSis" value="Sistema" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+  <mxGeometry x="300" y="0" width="560" height="1180" as="geometry" />
+</mxCell>
+<mxCell id="start" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+  <mxGeometry x="135" y="40" width="30" height="30" as="geometry" />
+</mxCell>
+<mxCell id="act1" value="Ingresar datos del médico" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="20" y="100" width="260" height="60" as="geometry" />
+</mxCell>
+<mxCell id="dec1" value="¿Datos válidos?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1">
+  <mxGeometry x="350" y="190" width="200" height="80" as="geometry" />
+</mxCell>
+<mxCell id="exc1" value="Mostrar excepción: datos incompletos o erróneos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;dashed=1;fontSize=11;" vertex="1" parent="1">
+  <mxGeometry x="20" y="200" width="260" height="60" as="geometry" />
+</mxCell>
+<mxCell id="end1" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#FFFFFF;strokeWidth=3;" vertex="1" parent="1">
+  <mxGeometry x="135" y="300" width="30" height="30" as="geometry" />
+</mxCell>
+<mxCell id="dec2" value="¿Colegiado ya existe?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1">
+  <mxGeometry x="350" y="310" width="200" height="80" as="geometry" />
+</mxCell>
+<mxCell id="exc2" value="Mostrar excepción: colegiado duplicado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;dashed=1;fontSize=11;" vertex="1" parent="1">
+  <mxGeometry x="20" y="420" width="260" height="60" as="geometry" />
+</mxCell>
+<mxCell id="end2" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#FFFFFF;strokeWidth=3;" vertex="1" parent="1">
+  <mxGeometry x="135" y="510" width="30" height="30" as="geometry" />
+</mxCell>
+<mxCell id="act2" value="Guardar médico" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="350" y="430" width="220" height="60" as="geometry" />
+</mxCell>
+<mxCell id="act3" value="Asociar especialidad seleccionada" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="350" y="530" width="220" height="60" as="geometry" />
+</mxCell>
+<mxCell id="dec3" value="¿Especialidad existe en el catálogo?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1">
+  <mxGeometry x="350" y="630" width="220" height="80" as="geometry" />
+</mxCell>
+<mxCell id="exc3" value="Mostrar excepción: especialidad inexistente" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;dashed=1;fontSize=11;" vertex="1" parent="1">
+  <mxGeometry x="20" y="630" width="260" height="60" as="geometry" />
+</mxCell>
+<mxCell id="end3" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#FFFFFF;strokeWidth=3;" vertex="1" parent="1">
+  <mxGeometry x="135" y="720" width="30" height="30" as="geometry" />
+</mxCell>
+<mxCell id="act4" value="Confirmar asociación de especialidad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="350" y="750" width="220" height="60" as="geometry" />
+</mxCell>
+<mxCell id="act5" value="Consultar disponibilidad del médico" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="20" y="850" width="260" height="60" as="geometry" />
+</mxCell>
+<mxCell id="dec4" value="¿Hay horarios configurados?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1">
+  <mxGeometry x="350" y="940" width="220" height="80" as="geometry" />
+</mxCell>
+<mxCell id="act6" value="Mostrar mensaje: sin disponibilidad" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;dashed=1;fontSize=11;" vertex="1" parent="1">
+  <mxGeometry x="350" y="1050" width="220" height="60" as="geometry" />
+</mxCell>
+<mxCell id="end4" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#FFFFFF;strokeWidth=3;" vertex="1" parent="1">
+  <mxGeometry x="460" y="1150" width="30" height="30" as="geometry" />
+</mxCell>
+<mxCell id="act7" value="Mostrar horarios disponibles" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;" vertex="1" parent="1">
+  <mxGeometry x="620" y="1050" width="220" height="60" as="geometry" />
+</mxCell>
+<mxCell id="end5" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#FFFFFF;strokeWidth=3;" vertex="1" parent="1">
+  <mxGeometry x="730" y="1150" width="30" height="30" as="geometry" />
+</mxCell>
+<mxCell id="f0" value="" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="start" target="act1">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f1" value="" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="act1" target="dec1">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f2" value="No" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="dec1" target="exc1">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f3" value="Sí" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="dec1" target="dec2">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f4" value="" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="exc1" target="end1">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f5" value="Sí" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="dec2" target="exc2">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f6" value="No" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="dec2" target="act2">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f7" value="" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="exc2" target="end2">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f8" value="" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="act2" target="act3">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f9" value="" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="act3" target="dec3">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f10" value="No" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="dec3" target="exc3">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f11" value="Sí" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="dec3" target="act4">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f12" value="" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="exc3" target="end3">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f13" value="" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="act4" target="act5">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f14" value="" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="act5" target="dec4">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f15" value="No" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="dec4" target="act6">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f16" value="Sí" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="dec4" target="act7">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f17" value="" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="act6" target="end4">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+<mxCell id="f18" value="" style="html=1;strokeColor=#333333;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="act7" target="end5">
+  <mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
