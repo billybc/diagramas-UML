@@ -1,0 +1,19 @@
+@startuml
+title Flujo de asignación de médicos por especialidad y disponibilidad (Actividad)
+
+start
+:Recibir solicitud de atención;
+:Identificar especialidad requerida;
+:Buscar médicos con la especialidad;
+
+if (¿Hay médicos disponibles?) then (Sí)
+  :Seleccionar médico con turno disponible;
+  :Crear asignación;
+  :Confirmar cita al paciente;
+else (No)
+  :Registrar solicitud en espera;
+  :Notificar falta de disponibilidad;
+endif
+
+stop
+@enduml
